@@ -14,4 +14,4 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: KA600
+    shield: ka600
