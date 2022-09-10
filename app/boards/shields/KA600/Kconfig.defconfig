@@ -1,0 +1,18 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_KA600
+
+config ZMK_KEYBOARD_NAME
+    default "KA600"
+
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
+config USB_DEVICE_MANUFACTURER
+	default "ZMK Project"
+
+endif
