@@ -1,5 +1,5 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_KINESISBLE
+config SHIELD_KA600
     def_bool $(shields_list_contains,KA600)
