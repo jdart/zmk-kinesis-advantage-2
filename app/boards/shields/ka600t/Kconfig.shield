@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_KA600
-    def_bool $(shields_list_contains,KA600)
+    def_bool $(shields_list_contains,ka600)
