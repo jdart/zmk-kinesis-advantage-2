@@ -174,8 +174,8 @@
 
 default_layer {
  bindings = <
-  &kp ESC   &kp F1    /*dead*/   &kp F3    &kp F4    /*dead*/    &kp F6   &kp F7   /*dead*/    
-                                                                   &kp F9   &kp F10  /*dead*/  &kp F12  &out OUT_TOG /*dead*/ &bt BT_CLR /*dead*/ &reset
+  &kp ESC   &kp F1    /*dead*/   &kp F3    &kp F4       /*dead*/    &kp F6     &kp F7    /*dead*/    
+  &kp F9    &kp F10   /*dead*/   &kp F12   &out OUT_TOG /*dead*/    &bt BT_CLR /*dead*/  &bootloader
 
   &kp EQUAL  &kp N1    &kp N2   &kp N3    &kp N4    &kp N5          &kp N6   &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS                                                             
   &kp TAB    &kp Q     &kp W    &kp F     &kp P     &kp G           &kp J    &kp L    &kp U     &kp Y    &kp SEMI &kp BSLH                                                              
@@ -183,22 +183,22 @@ default_layer {
   &kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B           &kp K    &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT                                                             
              &kp GRAVE &kp BSLH &kp LEFT  &kp RIGHT                          &kp UP   &kp DOWN  &kp LBKT &kp RBKT  
 
-                                         &kp LCTRL &kp LALT        &kp RGUI &kp RCTRL                                                                                                                                        
-                          &lt 3 BKSP   &lt 1 TAB   &kp HOME        &kp PG_UP &lt 1 RET  &lt 2 SPACE                                                                                                                   
-                                                   &kp END         &kp PG_DN                                                                                                                                                            
+                                       &kp LCTRL   &kp LALT         &kp RGUI   &kp RCTRL                                                                                                                                        
+                          &lt 3 BKSP   &lt 1 TAB   &kp HOME         &kp PG_UP  &lt 1 RET  &lt 2 SPACE                                                                                                                   
+                                                   &kp END          &kp PG_DN                                                                                                                                                            
  >;
 };
 
 numpad_layer {
  bindings = <
-  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   &trans   /*dead*/    
-                                                                   &trans   &trans  /*dead*/   &trans  &trans /*dead*/ &trans /*dead*/   &trans
+  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   &trans     /*dead*/    
+  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   /*dead*/   &trans
                                                                 
-  &trans  &trans       &trans       &trans        &trans       &trans             &trans      &kp KP_NUM  &kp KP_EQUAL &kp KP_SLASH  &kp KP_MULTIPLY &trans                                                             
+  &trans  &trans      &trans      &trans       &trans      &trans            &trans     &kp KP_NUM  &kp KP_EQUAL &kp KP_SLASH  &kp KP_MULTIPLY &trans                                                             
   &trans  &kp DEL     &kp N7      &kp N8       &kp N9      &kp PRCNT         &kp TILDE  &kp EXCL    &tdq         &kp DQT       &kp AT          &trans                                                    
   &trans  &kp PLUS    &kp N4      &kp N5       &kp N6      &kp STAR          &kp LARW   &kp DARW    &kp UARW     &kp RARW      &kp EQUAL       &trans                                                          
   &trans  &kp N0      &kp N1      &kp N2       &kp N3      &kp HASH          &kp GRAVE  &kp AMPS    &kp PIPE     &kp UNDER     &kp BSLH        &trans                                                             
-          &trans       &kp INS    &kp LEFT      &kp RIGHT                                &kp UP      &kp DOWN     &kp KP_DOT    &kp KP_ENTER  
+          &trans      &kp INS    &kp LEFT      &kp RIGHT                                &kp UP      &kp DOWN     &kp KP_DOT    &kp KP_ENTER  
 
                                    &kp LCTRL  &kp LALT        &kp RGUI    &kp RCTRL                                                                                                                                        
                         &kp CARET  &kp DLLR   &kp HOME        &kp PG_UP   &kp GT     &kp MINUS                                                                                                                  
@@ -208,8 +208,8 @@ numpad_layer {
 
 modsl {
  bindings = <
-  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   &trans   /*dead*/    
-                                                                   &trans   &trans  /*dead*/   &trans  &trans /*dead*/ &trans /*dead*/   &trans
+  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   &trans     /*dead*/    
+  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   /*dead*/   &trans
 
   &trans  &trans      &trans     &trans       &trans       &trans            &trans     &trans      &trans       &trans        &trans     &trans                                                             
   &trans  &trans      &trans     &trans       &trans       &trans            &trans     &trans      &trans       &trans        &trans     &trans                                                    
@@ -225,8 +225,8 @@ modsl {
 
 modsr {
  bindings = <
-  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   &trans   /*dead*/    
-                                                                   &trans   &trans  /*dead*/   &trans  &trans /*dead*/ &trans /*dead*/   &trans
+  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   &trans     /*dead*/    
+  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   /*dead*/   &trans
 
   &trans  &trans      &trans     &trans       &trans       &trans           &trans     &trans      &trans       &trans        &trans        &trans                                                              
   &trans  &trans      &trans     &trans       &trans       &trans           &trans     &kp LS(F6)  &kp LG(E)    &kp LG(M)     &kp LS(LG(F)) &trans                                                    
