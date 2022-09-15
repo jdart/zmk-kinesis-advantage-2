@@ -66,94 +66,94 @@
             };
             c_RBRC {
                 timeout-ms = <50>;
-                key-positions = <44 32>;
+                key-positions = <38 26>;
                 bindings = <&kp RBRC>;
             };
             c_LPAR {
                 timeout-ms = <50>;
-                key-positions = <45 57>;
+                key-positions = <39 51>;
                 bindings = <&kp LPAR>;
             };
             c_RPAR {
                 timeout-ms = <50>;
-                key-positions = <45 33>;
+                key-positions = <39 27>;
                 bindings = <&kp RPAR>;
             };
             c_LBKT {
                 timeout-ms = <50>;
-                key-positions = <55 43>;
+                key-positions = <49 37>;
                 bindings = <&kp LBKT>;
             };
             c_RBKT {
                 timeout-ms = <50>;
-                key-positions = <43 31>;
+                key-positions = <37 25>;
                 bindings = <&kp RBKT>;
             };
             c_LT {
                 timeout-ms = <100>;
-                key-positions = <46 58>;
+                key-positions = <40 52>;
                 bindings = <&kp LT>;
             };
             c_GT {
                 timeout-ms = <100>;
-                key-positions = <34 46>;
+                key-positions = <28 40>;
                 bindings = <&kp GT>;
             };
             // common shortcuts
             c_AGL {
                 timeout-ms = <70>;
-                key-positions = <26 38>;
+                key-positions = <20 32>;
                 bindings = <&kp LA(LG(LARW))>;
             };
             c_AGR {
                 timeout-ms = <70>;
-                key-positions = <27 39>;
+                key-positions = <21 33>;
                 bindings = <&kp LA(LG(RARW))>;
             };
             c_GBL {
                 timeout-ms = <70>;
-                key-positions = <38 50>;
+                key-positions = <32 44>;
                 bindings = <&kp LG(LBKT)>;
             };
             c_GBR {
                 timeout-ms = <70>;
-                key-positions = <39 51>;
+                key-positions = <33 45>;
                 bindings = <&kp LG(RBKT)>;
             };
             // misc
             c_esc {
                 timeout-ms = <50>;
-                key-positions = <27 28>;
+                key-positions = <21 22>;
                 bindings = <&kp ESCAPE>;
             };
             c_CAPSWORD {
                 timeout-ms = <50>;
-                key-positions = <56 51>;
+                key-positions = <50 45>;
                 bindings = <&caps_word>;
             };
             c_CAPSLOCK {
                 timeout-ms = <50>;
-                key-positions = <55 52>;
+                key-positions = <49 46>;
                 bindings = <&kp CAPSLOCK>;
             };
             c_T {
                 timeout-ms = <50>;
-                key-positions = <51 52>;
+                key-positions = <45 46>;
                 bindings = <&kp B>;
             };
             c_Y {
                 timeout-ms = <50>;
-                key-positions = <31 32>;
+                key-positions = <25 26>;
                 bindings = <&kp J>;
             };
             c_B {
                 timeout-ms = <50>;
-                key-positions = <27 28>;
+                key-positions = <21 22>;
                 bindings = <&kp V>;
             };
             c_N {
                 timeout-ms = <50>;
-                key-positions = <55 56>;
+                key-positions = <49 50>;
                 bindings = <&kp K>;
             };
         };
@@ -175,8 +175,8 @@
 
 default_layer {
  bindings = <
-  &kp ESC   &kp F1    /*dead*/   &kp F3    &kp F4       /*dead*/    &kp F6     &kp F7    /*dead*/    
-  &kp F9    &kp F10   /*dead*/   &kp F12   &out OUT_TOG /*dead*/    &bt BT_CLR /*dead*/  &bootloader
+  &kp ESC   /*dead*/   /*dead*/   &kp F3    /*dead*/      /*dead*/    &kp F6     /*dead*/   /*dead*/    
+  &kp F9    /*dead*/  /*dead*/   &kp F12   /*dead*/ /*dead*/   /*dead*/ /*dead*/  &bootloader
 
   &kp EQUAL  &kp N1    &kp N2   &kp N3    &kp N4    &kp N5          &kp N6   &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS                                                             
   &kp TAB    &kp Q     &kp W    &kp F     &kp P     &kp G           &kp J    &kp L    &kp U     &kp Y    &kp SEMI &kp BSLH                                                              
@@ -193,7 +193,6 @@ default_layer {
 numpad_layer {
  bindings = <
   &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   &trans     /*dead*/    
-  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   /*dead*/   &trans
                                                                 
   &trans  &trans      &trans      &trans       &trans      &trans            &trans     &kp KP_NUM  &kp KP_EQUAL &kp KP_SLASH  &kp KP_MULTIPLY &trans                                                             
   &trans  &kp DEL     &kp N7      &kp N8       &kp N9      &kp PRCNT         &kp TILDE  &kp EXCL    &tdq         &kp DQT       &kp AT          &trans                                                    
@@ -210,7 +209,6 @@ numpad_layer {
 modsl {
  bindings = <
   &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   &trans     /*dead*/    
-  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   /*dead*/   &trans
 
   &trans  &trans      &trans     &trans       &trans       &trans            &trans     &trans      &trans       &trans        &trans     &trans                                                             
   &trans  &trans      &trans     &trans       &trans       &trans            &trans     &trans      &trans       &trans        &trans     &trans                                                    
@@ -227,7 +225,6 @@ modsl {
 modsr {
  bindings = <
   &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   &trans     /*dead*/    
-  &trans   &trans    /*dead*/   &trans   &trans   /*dead*/    &trans   /*dead*/   &trans
 
   &trans  &trans      &trans     &trans       &trans       &trans           &trans     &trans      &trans       &trans        &trans        &trans                                                              
   &trans  &trans      &trans     &trans       &trans       &trans           &trans     &kp LS(F6)  &kp LG(E)    &kp LG(M)     &kp LS(LG(F)) &trans                                                    
